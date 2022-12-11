@@ -3,23 +3,24 @@
     padding: 0;
     margin: 0;
     box-sizing: border-box;
+   
 }
 
 /*estilos del body*/
 
-body {
-    background-color:white
-    flex-wrap
- 
+body{
+    background-color:white;
+    
+    
 }
 
 /*MENU*/
 header{
-    background-color: black;
+    background-color: black; 
     display: flex;
     justify-content: space-evenly;
     align-items: center;
-    padding: 10px;
+    padding: 5px;
 }
 
 nav ul{
@@ -30,67 +31,122 @@ nav ul{
 
 nav ul li{
     background-color:pink;
-    padding: 10px;
+    padding: 15px;
     color: whitesmoke;
-    list-style: none;
-    text-align: right;
+    text-align: center;
     text-shadow: 3px 2px 5px black;
     border-radius: 40px;
     box-shadow: 3px 2px 5px black;
 }
 
-
-main{ 
-    background-color: white;  
-}
-
-main h1{
+/*quiene somos*/
+h1{
     background-color: rgb(255, 215, 222);
    text-align: center;
     color: pink;
     height: 50px;
+    width: 100%;
 }
+
+.mainQuienesSomos {
+    display: flex;
+    flex-direction:column;
+    align-items: center;
+    font-size: 2rem;
+}
+
+.mainQuienesSomos h2{
+    color: rgb(214, 18, 18);
+    text-align: center;
+}
+.mainQuienesSomos h2 span{
+    display: block;
+    
+}
+.mainQuienesSomos p{
+    text-align: center;
+    padding: 1rem;
+    font-size: 1.5rem;
+}
+
+.mainQuienesSomos .boton{
+    background-color: pink;
+    color: black;
+    padding: 0.7rem;
+    box-shadow: 2px 2px 2px black;
+    text-shadow: 1px 1px 1px white;
+}
+
+.mainQuienesSomos img{
+    width: 50%;
+    filter: drop-shadow(1px 1px 3px);
+}
+
 
 /*tienda*/
 
-.tiendita{
-    color: black;
-}
-
-.tienda{
-    height: 700px;
-    margin: 5px;
-    height: 150px;
-    display: flex;
-    flex-wrap: wrap;
-    gap: 30px;
-    justify-content: center;
-    align-items: center;
-   
-}
-
-.objetos{
-    
-    width: 450px;
-    height: 545px;
+.btn{
     background-color: pink;
-    margin: 40px;
-    padding: 10px;
-
+    align-items: center;
 }
+
+.btn:hover{
+    background-color: rgb(201, 113, 128);
+    color: white;
+    align-items: center;
+}
+
+
 
 /*contacto*/
 
-header {
-    display: none;
-}
+
 
 
 /* mq */
-@media screen and (min-width:800px){
-    header{
-        display: block;
-        display: flex;
-        justify-content: center;
-    }   
+@media screen and (min-width:1024px){ 
+
+.mainQuienesSomos{
+    display: grid;
+    grid-template-columns: 2fr 2fr;
+    grid: template rows 0.7fr 1fr 0.7fr 1fr;
+    grid-template-areas: 
+    "p  img"
+    "h2  img"
+    "p-dos img"
+    "boton img";
+    justify-content:center;
+    justify-items:center;
 }
+.mainQuienesSomos p{
+    grid-area: p;
+}
+
+.mainQuienesSomos h2{
+    grid-area: h2;
+}
+
+.mainQuienesSomos .p-dos{
+    grid-area: p-dos;
+}
+.mainQuienesSomos .boton{
+    grid-area: boton;
+}
+
+/*estilos animaciones*/
+.mainQuienesSomos img{
+    grid-area: img;
+    
+}
+/*animaciones de img*/
+.mainQuienesSomos img:hover{
+    filter: drop-shadow(5px 5px 3px);
+    transform: scale(1);
+}
+.mainQuienesSomos .boton:hover{
+    filter: drop-shadow(5px 5px 3px);
+    transform: scale(1);
+}
+}
+
+
