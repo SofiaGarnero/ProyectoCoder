@@ -10,33 +10,15 @@
 
 body{
     background-color:white;
-    
-    
 }
 
 /*MENU*/
-header{
-    background-color: black; 
-    display: flex;
-    justify-content: space-evenly;
-    align-items: center;
-    padding: 5px;
+.navbar{
+    background-color: black;
 }
-
-nav ul{
-    list-style: none;
-    display: flex;
-    gap: 30px; 
-}
-
-nav ul li{
-    background-color:pink;
-    padding: 15px;
-    color: whitesmoke;
-    text-align: center;
-    text-shadow: 3px 2px 5px black;
-    border-radius: 40px;
-    box-shadow: 3px 2px 5px black;
+/*logo*/
+.row-logo{
+    background-color: black;
 }
 
 /*quiene somos*/
@@ -70,11 +52,10 @@ h1{
 }
 
 .mainQuienesSomos .boton{
-    background-color: pink;
     color: black;
     padding: 0.7rem;
     box-shadow: 2px 2px 2px black;
-    text-shadow: 1px 1px 1px white;
+    
 }
 
 .mainQuienesSomos img{
