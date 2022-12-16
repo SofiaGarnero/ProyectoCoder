@@ -1,0 +1,124 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;  
+}
+@import "utilidades/mixin";
+@import "utilidades/variables";
+
+
+/*estilos del body*/
+
+body{
+    background-color: nth($colores, 5);
+}
+
+/*MENU*/
+.navbar{
+    background-color: nth($colores, 1);
+}
+/*logo*/
+.row-logo{
+    background-color: nth($colores, 1);
+}
+
+/*quiene somos*/
+h1{
+   @include h1;
+}
+
+.mainQuienesSomos {
+    display: flex;
+    flex-direction:column;
+    align-items: center;
+    font-size: 2rem;
+}
+
+.mainQuienesSomos h2{
+    color: nth($colores, 2);
+    text-align: center;
+}
+.mainQuienesSomos h2 span{
+    display: block;
+    
+}
+.mainQuienesSomos p{
+    @include alinear;
+}
+
+.mainQuienesSomos .boton{
+    color: nth($colores, 1);
+    padding: 0.7rem;
+    box-shadow: 2px 2px 2px black;
+    
+}
+
+.mainQuienesSomos img{
+    width: 50%;
+    filter: drop-shadow(1px 1px 3px);
+}
+
+
+/*tienda*/
+
+.btn{
+    background-color: nth($colores, 4);
+    align-items: center;
+}
+
+.btn:hover{
+    background-color: nth($colores,3 );
+    color: nth ($colores, 3);
+    align-items: center;
+}
+
+
+
+
+
+/* mq */
+@media screen and (min-width:1024px){ 
+
+.mainQuienesSomos{
+    display: grid;
+    grid-template-columns: 2fr 2fr;
+    grid: template rows 0.7fr 1fr 0.7fr 1fr;
+    grid-template-areas: 
+    "p  img"
+    "h2  img"
+    "p-dos img"
+    "boton img";
+    justify-content:center;
+    justify-items:center;
+}
+.mainQuienesSomos p{
+    grid-area: p;
+}
+
+.mainQuienesSomos h2{
+    grid-area: h2;
+}
+
+.mainQuienesSomos .p-dos{
+    grid-area: p-dos;
+}
+.mainQuienesSomos .boton{
+    grid-area: boton;
+}
+
+/*estilos animaciones*/
+.mainQuienesSomos img{
+    grid-area: img;
+    
+}
+/*animaciones de img*/
+.mainQuienesSomos img:hover{
+    filter: drop-shadow(5px 5px 3px);
+    transform: scale(1);
+}
+.mainQuienesSomos .boton:hover{
+    filter: drop-shadow(5px 5px 3px);
+    transform: scale(1);
+}
+}
+

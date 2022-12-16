@@ -1,133 +1,89 @@
-/*reset*/
-*{
-    padding: 0;
-    margin: 0;
-    box-sizing: border-box;
-   
-}
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box; }
 
 /*estilos del body*/
-
-body{
-    background-color:white;
-}
+body {
+  background-color: white; }
 
 /*MENU*/
-.navbar{
-    background-color: black;
-}
+.navbar {
+  background-color: black; }
+
 /*logo*/
-.row-logo{
-    background-color: black;
-}
+.row-logo {
+  background-color: black; }
 
 /*quiene somos*/
-h1{
-    background-color: rgb(255, 215, 222);
-   text-align: center;
-    color: pink;
-    height: 50px;
-    width: 100%;
-}
+h1 {
+  background-color: #c97180;
+  text-align: center;
+  color: pink;
+  height: 50px;
+  width: 100%; }
 
 .mainQuienesSomos {
-    display: flex;
-    flex-direction:column;
-    align-items: center;
-    font-size: 2rem;
-}
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  font-size: 2rem; }
 
-.mainQuienesSomos h2{
-    color: rgb(214, 18, 18);
-    text-align: center;
-}
-.mainQuienesSomos h2 span{
-    display: block;
-    
-}
-.mainQuienesSomos p{
-    text-align: center;
-    padding: 1rem;
-    font-size: 1.5rem;
-}
+.mainQuienesSomos h2 {
+  color: #d61212;
+  text-align: center; }
 
-.mainQuienesSomos .boton{
-    color: black;
-    padding: 0.7rem;
-    box-shadow: 2px 2px 2px black;
-    
-}
+.mainQuienesSomos h2 span {
+  display: block; }
 
-.mainQuienesSomos img{
-    width: 50%;
-    filter: drop-shadow(1px 1px 3px);
-}
+.mainQuienesSomos p {
+  text-align: center;
+  font-size: 2rem;
+  padding: 0.5rem; }
 
+.mainQuienesSomos .boton {
+  color: black;
+  padding: 0.7rem;
+  box-shadow: 2px 2px 2px black; }
+
+.mainQuienesSomos img {
+  width: 50%;
+  filter: drop-shadow(1px 1px 3px); }
 
 /*tienda*/
+.btn {
+  background-color: pink;
+  align-items: center; }
 
-.btn{
-    background-color: pink;
-    align-items: center;
-}
-
-.btn:hover{
-    background-color: rgb(201, 113, 128);
-    color: white;
-    align-items: center;
-}
-
-
-
-/*contacto*/
-
-
-
+.btn:hover {
+  background-color: white;
+  color: nth black, #d61212, #c97180, pink, white, 5;
+  align-items: center; }
 
 /* mq */
-@media screen and (min-width:1024px){ 
-
-.mainQuienesSomos{
+@media screen and (min-width: 1024px) {
+  .mainQuienesSomos {
     display: grid;
     grid-template-columns: 2fr 2fr;
     grid: template rows 0.7fr 1fr 0.7fr 1fr;
-    grid-template-areas: 
-    "p  img"
-    "h2  img"
-    "p-dos img"
-    "boton img";
-    justify-content:center;
-    justify-items:center;
-}
-.mainQuienesSomos p{
-    grid-area: p;
-}
-
-.mainQuienesSomos h2{
-    grid-area: h2;
-}
-
-.mainQuienesSomos .p-dos{
-    grid-area: p-dos;
-}
-.mainQuienesSomos .boton{
-    grid-area: boton;
-}
-
-/*estilos animaciones*/
-.mainQuienesSomos img{
-    grid-area: img;
-    
-}
-/*animaciones de img*/
-.mainQuienesSomos img:hover{
+    grid-template-areas: "p  img" "h2  img" "p-dos img" "boton img";
+    justify-content: center;
+    justify-items: center; }
+  .mainQuienesSomos p {
+    grid-area: p; }
+  .mainQuienesSomos h2 {
+    grid-area: h2; }
+  .mainQuienesSomos .p-dos {
+    grid-area: p-dos; }
+  .mainQuienesSomos .boton {
+    grid-area: boton; }
+  /*estilos animaciones*/
+  .mainQuienesSomos img {
+    grid-area: img; }
+  /*animaciones de img*/
+  .mainQuienesSomos img:hover {
     filter: drop-shadow(5px 5px 3px);
-    transform: scale(1);
-}
-.mainQuienesSomos .boton:hover{
+    transform: scale(1); }
+  .mainQuienesSomos .boton:hover {
     filter: drop-shadow(5px 5px 3px);
-    transform: scale(1);
-}
-}
-
-
+    transform: scale(1); } }

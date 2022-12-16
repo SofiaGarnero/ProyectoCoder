@@ -1,0 +1,15 @@
+//mixin con paramentros
+
+@mixin h1{
+    background-color: nth($colores, 3);
+    text-align: center;
+     color: nth($colores, 4);
+     height: 50px;
+     width: 100%; 
+}
+
+@mixin alinear{
+    text-align: center;
+    font-size: 2rem;
+    padding: 0.5rem;
+}
