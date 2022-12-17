@@ -5,7 +5,8 @@
 
 /*estilos del body*/
 body {
-  background-color: white; }
+  background-color: white;
+  font-family: Arial, Helvetica, sans-serif; }
 
 /*MENU*/
 .navbar {
@@ -27,7 +28,7 @@ h1 {
   display: flex;
   flex-direction: column;
   align-items: center;
-  font-size: 2rem; }
+  font-size: 1rem; }
 
 .mainQuienesSomos h2 {
   color: #d61212;
@@ -38,8 +39,8 @@ h1 {
 
 .mainQuienesSomos p {
   text-align: center;
-  font-size: 2rem;
-  padding: 0.5rem; }
+  padding: 0.5rem;
+  font-size: 1rem; }
 
 .mainQuienesSomos .boton {
   color: black;
@@ -56,8 +57,8 @@ h1 {
   align-items: center; }
 
 .btn:hover {
-  background-color: white;
-  color: nth black, #d61212, #c97180, pink, white, 5;
+  background-color: #c97180;
+  color: nth black, #d61212, #c97180, pink, white, 1;
   align-items: center; }
 
 /* mq */
@@ -80,6 +81,8 @@ h1 {
   /*estilos animaciones*/
   .mainQuienesSomos img {
     grid-area: img; }
+  .mainQuienesSomos p {
+    font-size: 2rem; }
   /*animaciones de img*/
   .mainQuienesSomos img:hover {
     filter: drop-shadow(5px 5px 3px);
